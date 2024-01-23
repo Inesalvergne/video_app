@@ -11,3 +11,21 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+// Initialize the Video.js player
+console.log('hello');
+
+var player = videojs('my-video', {
+  controls: true,
+  fluid: true,
+});
+
+// Configure Chromecast button
+player.chromecast({
+  customData: {
+    title: 'Your Video Title',
+    description: 'Your Video Description',
+  },
+});
+
+player.controlBar.addChild('ChromecastButton', {});
