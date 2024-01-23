@@ -10,5 +10,16 @@
   <%= @video.description %>
 </p>
 
+<video id="my-video"
+       class="video-js"
+       controls
+       preload="auto"
+       controlsList="nodownload"
+       width="500"
+       height="500"
+       data-setup="{}">
+  <source src="https://www.dropbox.com/scl/fi/yhj5dfsr1r9hpv303x1da/le_wagon.mp4?rlkey=2gb44pm6dcyz8kweh0djuvpxv&raw=1" type="video/mp4">
+</video>
+
 <%= link_to 'Edit', edit_video_path(@video) %> |
 <%= link_to 'Back', videos_path %>

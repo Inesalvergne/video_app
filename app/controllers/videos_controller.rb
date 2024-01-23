@@ -8,7 +8,6 @@ class VideosController < ApplicationController
 
   # GET /videos/1 or /videos/1.json
   def show
-    raise
   end
 
   # GET /videos/new
