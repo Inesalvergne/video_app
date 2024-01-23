@@ -10,8 +10,8 @@ puts "Cleaning database..."
 Video.destroy_all
 
 puts "Creating videos..."
-video_1 = {title: "Video 1", description: "wohoo!" }
-video_2 =  {title: "Video 2", description: "trop bien"}
+video_1 = {title: "Video 1", description: "wohoo!", dropbox_path: "/le_wagon.mp4" }
+video_2 =  {title: "Video 2", description: "trop bien", dropbox_path: "/le_wagon.mp4"}
 
 [video_1, video_2].each do |attributes|
   video = Video.create!(attributes)
